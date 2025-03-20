@@ -36,7 +36,9 @@
                         </p>
                     </div>
                     {{ __('about.about3_desc_2') }}<br>
-                    <p><b>{{ __('about.about3_certificate') }}</b> <a href=" https://license.gov.uz/registry/76de68b4-7aa5-4572-a015-aaf069ba8c85"> https://license.gov.uz/registry/76de68b4-7aa5-4572-a015-aaf069ba8c85</a></p>
+                    <p><b>{{ __('about.about3_certificate') }}</b> <a
+                            href=" https://license.gov.uz/registry/76de68b4-7aa5-4572-a015-aaf069ba8c85" target="_blank">
+                            https://license.gov.uz/registry/76de68b4-7aa5-4572-a015-aaf069ba8c85</a></p>
                 </div>
             </div>
         </div>
@@ -51,43 +53,33 @@
                 <div class="col-lg-6"><img class="img-fluid w-100 rounded-3 mb-5 mb-lg-0"
                                            src="{{ asset('images/site/davom.jpg') }}" alt="..." width="400"/></div>
                 <div class="col-lg-8">
-                    <p class="lead fw-normal text-muted mb-0 p-2">
-                        <a href="{{ __('about.about3_link') }}">{{ __('about.about3_link') }}</a>
-                    </p>
-
-                    <p class="lead fw-normal text-muted mb-0 p-2">
-                        {{ __('about.about3_called') }}
-                    </p>
-
-                    <p class="lead fw-normal text-muted mb-0 p-2">
-                        {{ __('about.about3_lang') }}
-                    </p>
-
-                    <p class="lead fw-normal text-muted mb-0 p-2">
-                        {{ __('about.about3_org') }}
-                    </p>
-
-                    <p class="lead fw-normal text-muted mb-0 p-2">
-                        {{ __('about.about3_num') }}
-                    </p>
-
-                    <p class="lead fw-normal text-muted mb-0 p-2">
-                        <span class=""
-                              style="margin-left: 205px !important;">{{ __('about.about3_print_online') }} - @php echo date("Y"); @endphp</span>
-                    </p>
 
 
-                    <p class="lead fw-normal text-muted mb-0 p-2">
-                        {{ __('about.about3_address') }}
+                    @php
+                        function boldFirstPart($text) {
+                            [$bold, $regular] = explode(':', $text, 2) + ['', ''];
+                            return "<strong>{$bold}</strong>" . ($regular ? ":{$regular}" : '');
+                        }
+                    @endphp
+
+                      <p class="lead fw-normal text-muted mb-0 p-2">
+                        <a class="lead fw-normal text-muted" href="https://turkologiya.samdu.uz" target="_blank">{!! boldFirstPart(__('about.about3_link')) !!}</a>
                     </p>
 
-                    <p class="lead fw-normal text-muted mb-0 p-2">
-                        {{ __('about.about3_count') }}
-                    </p>
+                    <p class="lead fw-normal text-muted mb-0 p-2">{!! boldFirstPart(__('about.about3_called')) !!}</p>
+                    <p class="lead fw-normal text-muted mb-0 p-2">{!! boldFirstPart(__('about.about3_lang')) !!}</p>
+                    <p class="lead fw-normal text-muted mb-0 p-2">{!! boldFirstPart(__('about.about3_org')) !!}</p>
+                    <p class="lead fw-normal text-muted mb-0 p-2">{!! boldFirstPart(__('about.about3_num')) !!}</p>
 
                     <p class="lead fw-normal text-muted mb-0 p-2">
-                        {{ __('about.about3_desc') }}
+                        <span
+                            style="margin-left: 205px !important;">{{ __('about.about3_print_online') }} - @php echo date("Y"); @endphp</span>
                     </p>
+
+                    <p class="lead fw-normal text-muted mb-0 p-2">{!! boldFirstPart(__('about.about3_address')) !!}</p>
+                    <p class="lead fw-normal text-muted mb-0 p-2">{!! boldFirstPart(__('about.about3_count')) !!}</p>
+                    <p class="lead fw-normal text-muted mb-0 p-2">{!! boldFirstPart(__('about.about3_desc')) !!}</p>
+
                 </div>
             </div>
         </div>
@@ -113,42 +105,44 @@
                 </div>
             </div>
 
-             <div class="container px-4">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 border-1">
-                    <div class="text-center my-5 ">
-                        <div class="col-lg-10"><img class="img-fluid w-100  rounded-3 mb-5 mb-lg-0"
-                                                    src="{{ asset('images/site/info.png') }}" alt="..."
-                                                    width="400"/>
+            <div class="container px-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 border-1">
+                        <div class="text-center my-5 ">
+                            <div class="col-lg-10"><img class="img-fluid w-100  rounded-3 mb-5 mb-lg-0"
+                                                        src="{{ asset('images/site/info.png') }}" alt="..."
+                                                        width="400"/>
 
-                            <h5 class="mt-3">{{ __('about.about3_info_final') }}</h5>
+                                <h5 class="mt-3">{{ __('about.about3_info_final') }}</h5>
+                                <h5 class="mt-3"><a href="https://oak.uz/pages/4802"
+                                                    target="_blank">{{ __('about.link') }} :
+                                        https://oak.uz/pages/4802</a></h5>
+
+                            </div>
 
                         </div>
-
                     </div>
                 </div>
-            </div>
 
 
-
-            <div class="container my-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-4"><img class="img-fluid w-100 rounded-3 mb-5 mb-lg-0"
-                                               src="{{ asset('images/site/journal.png') }}" alt="..."/></div>
-                    <div class="col-lg-8">
-                        <h2 class="fw-bold mb-3 text-body">{{ __('about.about_1') }}</h2>
-                        <p class="lead fw-normal text-muted mb-0">
-                            {{ __('about.about_1c') }}
-                            <br>
-                            {{ __('about.about_1c1') }}
-                            <br>
-                            {{ __('about.about_1c2') }}
-                            <br>
-                            {{ __('about.about_1c3') }}
-                        </p>
+                <div class="container my-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-4"><img class="img-fluid w-100 rounded-3 mb-5 mb-lg-0"
+                                                   src="{{ asset('images/site/journal.png') }}" alt="..."/></div>
+                        <div class="col-lg-8">
+                            <h2 class="fw-bold mb-3 text-body">{{ __('about.about_1') }}</h2>
+                            <p class="lead fw-normal text-muted mb-0">
+                                {{ __('about.about_1c') }}
+                                <br>
+                                {{ __('about.about_1c1') }}
+                                <br>
+                                {{ __('about.about_1c2') }}
+                                <br>
+                                {{ __('about.about_1c3') }}
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
     </section>
     <hr class="m-0">
     <!-- About section two-->

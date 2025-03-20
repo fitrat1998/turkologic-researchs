@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Doi;
 use App\Models\Expert;
 use App\Models\Issue;
 use App\Models\User;
@@ -21,7 +22,7 @@ class AdminController extends Controller
 
         return view('admin.home',[
             'users' => User::count(),
-            'articles' => Article::count(),
+            'articles' => Doi::count(),
             'issues' => Issue::count(),
             'experts' => Expert::count(),
         ]);

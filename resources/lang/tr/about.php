@@ -61,4 +61,6 @@ return[
 
     'about3_desc' => "Uzmanlık (alanlar): Türk dilleri, türk halklarının sosyo-kültürel ilişkilerinin tarihi, Türk dünyası çalışmaları, Diyalektoloji, Folklor, Karşılaştırmalı dilbilim ve edebiyat çalışmaları, Edebi ilişkiler ve çeviri çalışmaları",
 
+    'link' => 'Bağlantı',
+
 ];

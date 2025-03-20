@@ -31,6 +31,10 @@ class MailSend extends Mailable
      */
     public function build()
     {
-        return $this->from(env('MAIL_FROM_ADDRESS'),$this->mailData['body'])->subject("Tasdiqlash kodi!.")->view('email');
+        return $this->from(env('MAIL_FROM_ADDRESS'), $this->mailData['title'])
+            ->subject("Tasdiqlash kodi!")
+            ->view('email')
+            ->with(['mailData' => (array)$this->mailData]); // Obyektni arrayga o‘giramiz
     }
+
 }

@@ -72,6 +72,6 @@ return [
 
     'about3_desc' => "Ixtisosligi (sohalar): Turkiy tillar, Turkiy xalqlarning ijtimoiy-madaniy aloqalari tarixi, Turk dunyosi tadqiqotlari, Dialektologiya, Folklorshunoslik, Qiyosiy tilshunoslik va adabiyotshunoshlik, Adabiy aloqalar va tarjimashunoslik",
 
-
+    'link' => 'Havola',
 ];
 

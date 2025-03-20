@@ -15,6 +15,14 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\YearController;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/test-email', function () {
+    Mail::raw('Bu test xabar', function ($message) {
+        $message->to('recipient@example.com')->subject('Test Xabar');
+    });
+
+    return 'Elektron pochta yuborildi!';
+});
+
 Route::get('/', [SiteController::class, 'index'])->name('index');
 Route::get('/mail/send', [SiteController::class, 'mailSend']);
 

@@ -1,5 +1,5 @@
 <?php
-return[
+return [
     'about' => "About our journal",
     'about_title' => "Samarkand State University is the founder of «Turkologik tadqiqotlar», «Turkological research», «Тюркологические исследования», «Türkoloji araştırmaları» journal.",
 
@@ -34,7 +34,7 @@ return[
 
     'journal_archive' => "Archives of journals",
 
-     'about3_link' => "Website link: https://turkologiya.samdu.uz/",
+    'about3_link' => "Website link: https://turkologiya.samdu.uz/",
 
     'about3_called' => "Title: “Turkological research” International scientific journal ",
 
@@ -66,5 +66,7 @@ return[
     'about3_count' => "Duration: 4 issues per year",
 
     'about3_desc' => "Specialization (areas): Turkic languages, History of Socio-Cultural Relations of the Turkic Peoples, Turkic World Studies, Dialectology, Folklore Studies, Comparative Linguistics and Literary Studies, Literary Relations and Translation Studies",
+
+    'link' => 'Link',
 
 ];
