@@ -38,7 +38,7 @@ return[
     'about3_org' => "Müessis: Şeraf Reşidov adına Semerkand Devlet Üniversitesi",
 
 
-    'about3_address' => "140104, Özbekistan, Semerkant Bölgesi, Semerkant Şehri, Üniversite Bulvarı, No: 15.Yayın sıklığı: Yılda 4 sayı.",
+    'about3_address' => "Editörlük ve yayınlama adresi: 140104, Özbekistan, Semerkant Bölgesi, Semerkant Şehri, Üniversite Bulvarı, No: 15.Yayın sıklığı: Yılda 4 sayı.",
 
     'about3_print_start' => "Nashr boshlanish yili",
 

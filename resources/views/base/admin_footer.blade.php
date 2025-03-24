@@ -1,4 +1,4 @@
 <footer class="main-footer">
       <!-- Default to the left -->
-      <strong>Copyright &copy; 2023 <a href="https://">Turkologik Tadqiqotlar</a>.</strong> All rights reserved.
+      <strong>Copyright &copy; <?php echo date("Y"); ?> <a href="https://">Turkologik Tadqiqotlar</a>.</strong> All rights reserved.
 </footer>

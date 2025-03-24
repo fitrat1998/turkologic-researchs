@@ -70,6 +70,8 @@
                     <p class="lead fw-normal text-muted mb-0 p-2">{!! boldFirstPart(__('about.about3_lang')) !!}</p>
                     <p class="lead fw-normal text-muted mb-0 p-2">{!! boldFirstPart(__('about.about3_org')) !!}</p>
                     <p class="lead fw-normal text-muted mb-0 p-2">{!! boldFirstPart(__('about.about3_num')) !!}</p>
+{{--                    <p class="lead fw-normal text-muted mb-0 p-2">{!! boldFirstPart(__('about.about3_num')) !!}  - {{ __('about.about3_print_online') . ' ' . date('Y') }}</p>--}}
+
 
                     <p class="lead fw-normal text-muted mb-0 p-2">
                         <span

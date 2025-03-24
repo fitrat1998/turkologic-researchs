@@ -50,7 +50,7 @@ return [
 
     'about3_org' => "Muassis: Sharof Rashidov nomidagi Samarqand davlat universiteti",
 
-    'about3_address' => "Tahririyat manzili:  140104, O‘zbekiston, Samarqand viloyati, Samarqand shahri, Universitet xiyoboni 15-uy",
+    'about3_address' => "Tahririyat va nashriyot manzili: 140104, O‘zbekiston, Samarqand viloyati, Samarqand shahri, Universitet xiyoboni 15-uy",
 
     'about3_print_start' => "Nashr boshlanish yili",
 

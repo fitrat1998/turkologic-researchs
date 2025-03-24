@@ -9,44 +9,22 @@
     <div class="card card-solid ">
 
         <div class="card-header text-center">
-            <h3>Mualliflar uchun talablar</h3>
+            <h3>{{ __('home.requirements') }}</h3>
         </div>
 
         <div class="card-body pb-0 row">
 
             <div class="col-md-6 bg-light p-3">
-                <h3 class="text-primary"><i class="fa fa-check-circle"></i> Asosiy talablar</h3>
-                <p class="text-dark text-justify">Muallif (yoki hammualliflar) tomonidan taqdim etilayotgan ilmiy maqola mavzusi “Inson kapitali va ijtimoiy rivojlanish jurnali. ” ilmiy jurnalining ruknlariga mos kelishi shart.
-                    Maqola xalqaro andozalar talabi doirasidagi bandlarga ega bo’lishi lozim: - Maqola mavzusi (Title)
-                    Maqola mavzusi qisqa ko’rinishga ega bo’lib, maqolaning tadqiqot yo’nalishini aniq ifodalashi lozim. Maqola mavzusi o’zbek, rus hamda ingliz tillarida taqdim etilishi shart.
+                <h3 class="text-primary"><i class="fa fa-check-circle"></i>Maqolalar chop etilish tartibi</h3>
+                <p class="text-dark text-justify">
+                    Jurnalning 1 ta sonida muallifning faqat 1 ta maqolasi chop etiladi.
                 </p>
             </div>
 
             <div class="col-md-6 bg-light p-3">
-                <h3 class="text-primary"><i class="fa fa-check-circle"></i> Maqola muallifi to’g’risida ma’lumot</h3>
+                <h3 class="text-primary"><i class="fa fa-check-circle"></i>Maqola yoziladigan til</h3>
                 <p class="text-dark text-justify">
-                    Ushbu qismga muallifning ismi-sharifi (otasining ismi bilan), ish joyi va lavozimi, ilmiy darajasi va unvoni, elektron pochta manzili,  telefon raqam kiritiladi.
-                </p>
-            </div>
-
-
-            <div class="col-md-6 bg-light p-3">
-                <h3 class="text-primary">
-                    <i class="fa fa-check-circle"></i>
-                    Maqola annotasiyasi
-                </h3>
-                <p class="text-dark text-justify">
-                    Maqolalarning qisqacha annotasiyasi 10-12 qatordan oshmagan, o’zbek, rus va ingliz tillarida keltiriladi. Annotasiyada tadqiqot muammosi, uning dolzarbligi, tadqiqot muammosini ochib berish metodologiyasi, tadqiqot natijalari, maqolaning mazmunidan kelib chiqqib muallifning ilmiy va amaliy hissasini qisqacha bayoni keltiriladi.
-                </p>
-            </div>
-
-            <div class="col-md-6 bg-light p-3">
-                <h3 class="text-primary">
-                    <i class="fa fa-check-circle"></i>
-                    Kalit so’zlar
-                </h3>
-                <p class="text-dark text-justify">
-                    Maqola mazmuni va maqsadini eng qisqa mazmunda ochib beruvchi kalit so’zlar hisoblanadi. google.com, scholar.google.com elektron qidiruv tizimida maqolani tez topish uchun kalit so’zlarning har biri asosiy matn tarkibida o’rtacha 6-8 marta takrorlanishi tavsiya qilinadi.
+                   Maqolalar o‘zbek, ingliz, rus va barcha turkiy tillarda taqdim etilishi mumkin.
                 </p>
             </div>
 
@@ -54,10 +32,21 @@
             <div class="col-md-6 bg-light p-3">
                 <h3 class="text-primary">
                     <i class="fa fa-check-circle"></i>
-                    Kirish
+                    Maqola ma`lumotlarining ilmiy asoslanganligi
                 </h3>
                 <p class="text-dark text-justify">
-                    Kirish qismida tadqiqot muammosi, uning maqsad va vazifalari yoritiladi. Kirish qismida tadqiqotning dolzarbligini, ilmiy ahamiyati yoritib berilishi lozim.
+                    Maqolada keltirilgan ma’lumot va dalillarning ilmiy asoslanganligi, ishonchli va ko‘chirmachilik holatlari uchun muallif(lar) mas’uldir
+                </p>
+            </div>
+
+            <div class="col-md-6 bg-light p-3">
+                <h3 class="text-primary">
+                    <i class="fa fa-check-circle"></i>
+                    Ekspertlar tekshiruvi
+                </h3>
+                <p class="text-dark text-justify">
+                    Maqolalar ekspertiza qilinadi. Ekspertlar tomonidan tavsiya etilgan maqolalargina jurnalda chop etiladi.
+                       	 Tavsiya etilmagan maqolalar chop etilmaydi va mualliflarga qaytarilmaydi.
                 </p>
             </div>
 
@@ -65,65 +54,43 @@
             <div class="col-md-6 bg-light p-3">
                 <h3 class="text-primary">
                     <i class="fa fa-check-circle"></i>
-                    Mavzuga oid adabiyotlarning sharhi
+                    Maqolalar chop etilish tartibi
                 </h3>
                 <p class="text-dark text-justify">
-                    Mavzuga doir adabiyotlar tahlili tadqiqot olib borilayotgan muammo yuzasidan muallifning bilim va tasavvurga ega ekanini namoyon etuvchi band hisoblanadi. Adabiyotlarning tahlili mazkur mavzu doirasidagi bilimlarni oshiradi va tadqiqot yuzasidan paydo bo’ladigan savollarni yanada oydinlashtirishga ko’maklashadi. Ma’lumki, har qanday tadqiqot ishi ushbu sohada yaratilgan avvalgi bilimlar negiziga yaratiladi. Adabiyotlar sharhi, sohadagi jurnal maqolalari va boshqa turdagi ma’lumot manbalari asosida amalga oshadi
+                   Jurnalning 1 ta sonida muallifning faqat 1 ta maqolasi chop etiladi.
                 </p>
             </div>
 
-
-            <div class="col-md-6 bg-light p-3">
-                <h3 class="text-primary">
-                    <i class="fa fa-check-circle"></i>
-                    Tadqiqot metodologiyasi
-                </h3>
-                <p class="text-dark text-justify">
-                    Tadqiqotning eng muhim qismi hisoblanib, o’tkazilayotgan tadqiqotning umumiy xaritasi, tadqiqot yo’nalishi va natijaga olib boruvchi hisoblanadi. Tadqiqot yo’nalishini belgilash, tadqiqot muammosining yechimiga qaraatilgan rejasini tuzish, tadqiqot uchun zaruriy axborotlarni yig’ish, tadqiqot etikasini belgilash, tadqiqot strategiyasini aniqlash bo’yicha qaror qabul qilish asosida qo’yilgan muammoning aniq yechimiga olib chiquvchi yo’lni belgilashdir. Metodologiya qismi tadqiqot uchun tanlangan yo’lning ishonchliligini asoslash orqali namoyon bo’ladi.
-                </p>
-            </div>
-
-
-            <div class="col-md-6 bg-light p-3">
-                <h3 class="text-primary">
-                    <i class="fa fa-check-circle"></i>
-                    Tahlil va natijalar
-                </h3>
-                <p class="text-dark text-justify">
-                    Tadqiqotning tahlil qismida yig’ilgan ma’lumotlarning tahlilini amalga oshiradi. Bunda faqatgina tahlil usulining natijalari ifoda etiladi. Natijalar bo’yicha muhokama maqolaning keyingi qismining vazifasi hisoblanadi.
-                </p>
-            </div>
-
-
-            <div class="col-md-6 bg-light p-3">
-                <h3 class="text-primary">
-                    <i class="fa fa-check-circle"></i>
-                    Xulosa va takliflar
-                </h3>
-                <p class="text-dark text-justify">
-                    Tadqiqotning maqsad va vazifalarining aniqlanganligi, tadqiqot bo’yicha tug’ilgan muammolarining yechimini topganligi, tadqiqotning asosiy natijalariga va tadqiqotga umumiy xulosalar, takliflar va tadqiqotdan kelib chiqib, tadqiqot ishi yo’nalishlari maqola xulosa va takliflari qismining asosini tashkil etishi lozim.
-                </p>
-            </div>
 
             <div class="col-md-6 bg-light p-3">
                 <h3 class="text-primary">
                     <i class="fa fa-check-circle"></i>
                     Foydalanilgan adabiyotlar ro’yxati
                 </h3>
-                <p class="text-dark text-justify">
-                        Ushbu qismda tadqiqotda foydalanilgan barcha adabiyotlarning ro’yxati [1], [2] yoki [3] ketma-ketligida qo’yiladi:
-                    <ol>
-                        <li>mualliflar ismi-sharifi, kitob nomi, nashr manzili nashriyot nomi, yili, betlari;</li>
-                        <li>mualliflar ismi-sharifi, maqola nomi, jurnal nomi, nashri, yili, soni, betlari.</li>
-                        <li>Maqola matni Microsoft Office Word dasturida yagona fayl ko’rinishida terilgan bo’lishi zarur. Sahifaning yuqori va pastki tomonidan, chap va o’ng tomonlaridan - 2,5 sm; oriyentasiyasi - kitob shaklida. Shrift - Times New Roman, o’lchami - 11 kegl, qatorlar orasi intervali - 1,0; bo’g’in ko’chirish - avtomatik. Grafiklar va diagrammalar qurishda Microsoft Office Excel dasturidan foydalanish lozim. Maqolaning maksimal hajmi 10 betdan oshmasligi, minimal hajmi esa 5 betdan kam bo’lmasligi hamda foydalanilgan adabiyotlar soni kamida 10-15 manbadan iborat bo’lishi lozim. Matndagi bibliografik havolalar (ssilka) kvadrat qavsda ro’yxatda keltirilgan tartibda qayd qilish lozim.</li>
-                        <li>Maqolalar o’zbek, rus, yoki ingliz tillarida taqdim etilishi mumkin.</li>
-                        <li>Jurnal talablariga mos kelmaydigan maqolalar tahririyat tomonidan ko’rib chiqilmaydi.</li>
-                        <li>Yuborilgan maqolalarning barchasi “Antiplagiat” tizimida tekshiriladi.</li>
-
-                    </ol>
-                </p>
+                <p class='fs-14 mb-4'>
+                        	Maqola 8-10 sahifa hajmida taqdim etiladi;
+                        	Maqolaning tarkibiy tuzilishi:
+                        	<ol>
+                                <li>	Maqola matni Times News Roman shriftida, 12 kattalikda, chap: 3 sm, o‘ng: 1,5 sm, yuqori va quyi: 2 sm; 1,5 intervalda, A4 shaklida tayyorlanishi lozim.</li>
+                                <li>	Maqola sarlavhasi, muallif(lar)ning familiyasi, ismi va otaismi toʻliq holatda katta harflar bilan yozilishi kerak.</li>
+                                <li>	Muallif(lar)ning lavozimi, ilmiy unvoni, ish (o‘qish) joylari, respublika, viloyat, telefon raqami, elektron pochta manzili va ORCID raqami to‘liq keltirilishi kerak.</li>
+                                <li>	Annotatsiya, maqolaning qisqacha mazmun va ahamiyati, natijalardan iborat bo‘lishi lozim.</li>
+                                <li>	Har bir maqola boshida maqola yozilgan tildan tashqari yana 2 tilda (o‘zbek, ingliz, rus va turk tillaridan ixtiyoriy ravishda tanlanadi) annotatsiya bo‘lishi lozim.</li>
+                                <li>	Annotatsiya 120-150 so‘zdan ko‘p bo‘lmagan shaklda bo‘lishi kerak.</li>
+                                <li>	Annotatsiyaning pastki qismida maqola mazmunini yorituvchi 7-10 ta tayanch so‘zlar keltirilishi kerak.</li>
+                            </ol>
+                        	Maqola quyidagi shaklda tayyorlanishi kerak:
+                        	<ol type='A'>
+                                <li> Kirish (Introduction);</li>
+                                <li> Asosiy qism (Main part);</li>
+                                <li> Natijalar va muhokama (Results and Discussions);</li>
+                                <li> Xulosalar (Conclusions);</li>
+                                <li> Adabiyotlar (References) – alifbo tartibida keltiriladi;</li>
+                                <li> Havola(snoskalar)lar qavsda muallif familiyasi – nashr sanasi – sahifasi (Mo‘minov, 2020: 25) shaklida keltiriladi;</li>
+                                <li> Rasm, chizma, jadval, diagrammalar «Rasm» deb arab raqamlari bilan qayd etiladi. Belgi yoki ishoralar – rasm ostida, keyingi qatorda, oʻrtada joylashtiriladi va qoraytirilgan shrift bilan belgilanadi.</li>
+                            </ol>
+                    </p>
             </div>
-
 
 
         </div>

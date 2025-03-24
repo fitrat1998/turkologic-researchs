@@ -43,7 +43,7 @@ return [
     'about3_org' => "Founder: Samarkand State University named after Sharof Rashidov",
 
 
-    'about3_address' => "140104, University blv. 15, Samarkand сity, Samarkand region, Uzbekistan",
+    'about3_address' => "Editorial and publishing address: 140104, University blv. 15, Samarkand сity, Samarkand region, Uzbekistan",
 
     'about3_print_start' => "Year of publication:	Print: 2023",
 
