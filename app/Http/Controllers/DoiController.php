@@ -18,9 +18,9 @@ class DoiController extends Controller
 
 
         $cmp = "=";
-        if(is_null($issue_id)) $cmp = '!=';
+        if (is_null($issue_id)) $cmp = '!=';
 
-        $dois = Doi::where('issue_id',$cmp,$issue_id)->orderBy('id','desc')->get();
+        $dois = Doi::where('issue_id', $cmp, $issue_id)->orderBy('id', 'desc')->get();
         return view('admin.dois', [
             'dois' => $dois,
         ]);
@@ -37,8 +37,8 @@ class DoiController extends Controller
         $issue_id = intval($request->issue);
         $issues = Issue::all();
 
-        $articles = Article::where('status','=','accepted')->get();
-        return view('admin.doi-create',[
+        $articles = Article::where('status', '=', 'accepted')->get();
+        return view('admin.doi-create', [
             'issue_id' => $issue_id,
             'issues' => $issues,
 //            'articles' => $articles,
@@ -52,25 +52,26 @@ class DoiController extends Controller
         $data = $this->validateData();
         $file_name = Str::random(20) . time() . "doi.pdf";
 
-        $ff = $request->file('doi_file')->storeAs('dois',$file_name);
+        $ff = $request->file('doi_file')->storeAs('dois', $file_name);
         $doi = new Doi();
         $doi->issue_id = $data['issue_id'];
         $doi->title = $data['title'];
         $doi->authors = $data['authors'];
         $doi->abstract = $data['abstract'];
         $doi->keywords = $data['keywords'];
-        if(!empty($data['doi_url'])) $doi->doi_url = $data['doi_url'];
+        if (!empty($data['doi_url'])) $doi->doi_url = $data['doi_url'];
         $doi->doi_file = $file_name;
         $doi->save();
 
-       return redirect()->route('admin.dois')->with('success_msg',"Jurnal soni muvaffaqiyatli qo'shildi!!!");
+        return redirect()->route('admin.dois')->with('success_msg', "Jurnal soni muvaffaqiyatli qo'shildi!!!");
     }
 
-    public function download($file){
+    public function download($file)
+    {
         $headers = array(
             'Content-Type: application/pdf',
         );
-        return Storage::download('dois/'.$file,$file,$headers);
+        return Storage::download('dois/' . $file, $file, $headers);
     }
 
 
@@ -79,31 +80,33 @@ class DoiController extends Controller
         $issues = Issue::all();
 
         $dois = Doi::find($id);
-        return view('admin.doi-edit',compact('dois','issues'));
+        return view('admin.doi-edit', compact('dois', 'issues'));
     }
 
 
-    public function update(Request $request,$id)
+    public function update(Request $request, $id)
     {
         $dois1 = Doi::find($id);
         $name = $dois1->doi_file;
-        if($request->hasfile('doi_file')){
+        if ($request->hasfile('doi_file')) {
 
-            if(isset($dois1->doi_file)){
+            if (isset($dois1->doi_file)) {
                 Storage::delete('files' . $dois1->doi_file);
             }
 
             $name = $request->file('doi_file')->getClientOriginalName();
-            $photo = $request->file('doi_file')->storeAs('files',$name);
+            $photo = $request->file('doi_file')->storeAs('files', $name);
         }
 
         // $name = $request->file('doi_file')->getClientOriginalName();
         $data = $this->validateData();
         $name = Str::random(20) . time() . "doi.pdf";
 
-        $ff = $request->file('doi_file')->storeAs('dois',$name);
+//        dd($data);
+
+        $ff = $request->file('doi_file')->storeAs('dois', $name);
         $doi = new Doi();
-        if(!empty($data['doi_url'])) $doi->doi_url = $data['doi_url'];
+        if (!empty($data['doi_url'])) $doi->doi_url = $data['doi_url'];
         else $data['doi_url'] = "";
         $dois1->update([
             'issue_id' => $data['issue_id'],
@@ -112,17 +115,20 @@ class DoiController extends Controller
             'abstract' => $data['abstract'],
             'keywords' => $data['keywords'],
             'doi_url' => $data['doi_url'],
-            'doi_file' => $name
+            'doi_file' => $name,
+            'created_at' => $data['date'],
+            'updated_at' => now(),
         ]);
+
         $dois = Doi::all();
 
-        return redirect()->route('admin.dois')->with('success_msg',"Jurnal soni muvaffaqiyatli ozgartirildi!!!");
+        return redirect()->route('admin.dois')->with('success_msg', "Jurnal soni muvaffaqiyatli ozgartirildi!!!");
     }
 
     public function destroy(Doi $doi)
     {
         $doi->delete();
-        return redirect()->back()->with('success_msg',"Arxivdan maqola o'chirildi!");
+        return redirect()->back()->with('success_msg', "Arxivdan maqola o'chirildi!");
 
     }
 
@@ -136,7 +142,8 @@ class DoiController extends Controller
             'keywords' => 'required',
             'doi_url' => '',
             'doi_file' => 'required|file|mimetypes:application/pdf',
-        ],[
+            'date' => 'nullable',
+        ], [
             'required' => "Bo'sh maydonlar mavjud, ularni to'ldiring!!!"
         ]);
     }

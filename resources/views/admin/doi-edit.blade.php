@@ -37,7 +37,7 @@
 
                             <div class="form-group col-md-12">
                                 <label for="title">Maqola mavzusi</label>
-                                <input type="text" name="title"  class="form-control" id="title" required placeholder="Maqola mavzusi" value="{{ old('title', $dois->title) }}" 
+                                <input type="text" name="title"  class="form-control" id="title" required placeholder="Maqola mavzusi" value="{{ old('title', $dois->title) }}"
                                 >
                             </div>
 
@@ -56,11 +56,16 @@
 
                             <div class="form-group col-md-12">
                                 <label for="authors">DOI manzilini kiriting.</label>
-                                <input type="text" name="doi_url"  class="form-control" id="doi_url" value="{{ old('doi_url') }}" placeholder="Bo'sh qolsin" disabled>
+                                <input type="text" name="doi_url"  class="form-control" id="doi_url" value="{{ old('doi_url',$dois->doi_url) }}" placeholder="Bo'sh qolsin">
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="file">Fayl yuklash(* Maqola .pdf shaklda.) </label>
                                 <input type="file" name="doi_file"  class="form-control" id="doi_file" required  placeholder="file" accept=".pdf">
+                            </div>
+
+                             <div class="form-group col-md-12">
+                                <label for="file">Yaratilgan vaqti</label>
+                                <input type="text" name="date"  class="form-control" id="date"  placeholder="Yaratilgan vaqti" value="{{ old('created_at',$dois->created_at) }}">
                             </div>
 
                             <hr>

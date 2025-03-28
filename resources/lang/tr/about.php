@@ -44,7 +44,7 @@ return[
 
     'about3_print_online' => "Çevrimiçi:",
 
-    'about3_info' => "20 Ekim 2023 tarihinde dergi için GOST 7.56-2002 “Seri Yayınların Uluslararası Standart Numaralandırılması” gerekliliklerine uygun olarak Özbekistan Milli Kütüphanesi tarafından Uluslararası Standart Seri Numarası (ISSN) verilmiştir.Derginin ISSN numarası: 2992-9229",
+    'about3_info' => "20 Ekim 2023 tarihinde derginin baskısı için, 3 Mart 2025'te elektronik olarak GOST 7.56-2002 “Seri Yayınların Uluslararası Standart Numaralandırılması” gerekliliklerine uygun şekilde Özbekistan Milli Kütüphanesi tarafından Uluslararası Standart Seri Numarası (ISSN) verilmiştir. Derginin baskı ISSN numarası: 2992-9229.Derginin elektronik ISSN numarası: 3060-5318.ISSN Uluslararası Portal Site Bağlantıları: ",
 
     'about3_info_link' => "ISSN Uluslararası Portalı Bağlantısı:  ",
 

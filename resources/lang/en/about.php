@@ -49,8 +49,9 @@ return [
 
     'about3_print_online' => "Online",
 
-    'about3_info' => "On October 20, 2023, the journal was assigned an International Standard Serial Number (ISSN) by the National Library of Uzbekistan in accordance with the requirements of GOST 7.56-2002, 'International Standard Serial Numbering of Serial Publications.'
-                        Journal ISSN: 2992-9229",
+    'about3_info' => "The journal was assigned an International Standard Serial Number (ISSN) by the National Library of Uzbekistan on October 20, 2023 for print edition, and on March 3, 2025 for online edition, based on the requirements of the interstate standards GOST 7.56-2002 'International Standard Serial Numbering of Publications'. The journal's print ISSN number: 2992-9229.
+The journal's online ISSN number: 3060-5318.
+Links on the ISSN International Portal: ",
 
     'about3_info_link' => "Link on the ISSN International Portal:  ",
 

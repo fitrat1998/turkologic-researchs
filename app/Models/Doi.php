@@ -9,20 +9,23 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Doi extends Model
 {
     use HasFactory;
+
 //    use SoftDeletes;
 
-    protected $fillable=[
+    protected $fillable = [
         'doi_url',
         'doi_file',
         'title',
         'authors',
         'abstract',
         'keywords',
-
         'issue_id',
+        'created_at',
     ];
 
-    public function issue(){
+
+    public function issue()
+    {
         return $this->belongsTo(Issue::class);
     }
 

@@ -112,7 +112,7 @@
 @endif
 
 <script>
-window.replainSettings = { id: '915c56f5-64b0-4ef9-a7b1-f80576034607' };
+window.replainSettings = { id: 'c6ea4972-ae63-4ce9-b351-75c7e69412ce' };
 (function(u){var s=document.createElement('script');s.async=true;s.src=u;
 var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
 })('https://widget.replain.cc/dist/client.js');

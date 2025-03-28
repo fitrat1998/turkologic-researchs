@@ -54,7 +54,7 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="name">Заголовок (RU)</label>
-                                <input type="text" name="title_ru"  class="form-control" id="title_ru" required value="{{ $news->title_ru }}" placeholder="title_ru">
+                                <input type="text" name="title_tr"  class="form-control" id="title_tr" required value="{{ $news->text_tr }}" placeholder="text_tr">
                             </div>
 
                             <hr>
@@ -73,8 +73,8 @@
 
                             <div class="form-group col-md-4">
                                 <br>
-                                <label for="text_uz">Yangilik matni(RU)</label>
-                                <textarea id="text_ru" class="form-control" name="text_ru" rows="4" placeholder="Enter ...">{{$news->text_ru}}</textarea>
+                                <label for="text_uz">Yangilik matni(TR)</label>
+                                <textarea id="text_ru" class="form-control" name="text_tr" rows="4" placeholder="Enter ...">{{$news->text_tr}}</textarea>
                             </div>
                             <!-- /.card-body -->
 

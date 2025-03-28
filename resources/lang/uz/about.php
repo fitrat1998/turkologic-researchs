@@ -56,7 +56,7 @@ return [
 
     'about3_print_online' => "Onlayn",
 
-    'about3_info' => "Jurnalga 2023-yil 20-oktabrda GOST 7.56-2002 'Seriyali nashrlarning xalqaro standart raqamlanishi' davlatlataro standartlari talablari asosida O‘zbeksiton Milliy kutubxonasi tomonidan Xalqaro standart raqami (ISSN) berilgan.Jurnalning ISSN raqami: 2992-9229.",
+    'about3_info' => "Jurnalga 2023-yil 20-oktabrda bosma nashr uchun, 2025-yil 3-martda esa onlayn namunadagi GOST 7.56-2002 'Seriyali nashrlarning xalqaro standart raqamlanishi' davlatlataro standartlari talablari asosida O‘zbeksiton Milliy kutubxonasi tomonidan Xalqaro standart raqami (ISSN) berilgan. Jurnalning bosma ISSN raqami: 2992-9229. Jurnalning onlayn ISSN raqami: 3060-5318.Xalqaro The ISSN International Portal saytidagi havolalari: ",
 
     'about3_info_link' => "Xalqaro The ISSN International Portal saytidagi havolasi: ",
 
